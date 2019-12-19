@@ -96,7 +96,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1912/e3/e34a3084c05532cca3.img.jpg_200x200_ecbe41c5.jpg",
 				"id": 2,
 				"img_title": "随买随用",
 				"name": "上海野生动物园",
@@ -108,7 +108,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1603/9b/9bf694a468dd774490.water.jpg_200x200_c7f8a6ad.jpg",
 				"id": 3,
 				"img_title": "随买随用",
 				"name": "上海动物园",
@@ -120,7 +120,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1811/e4/e4b9b471d2afc473a3.img.jpg_200x200_9a7794fc.jpg",
 				"id": 4,
 				"img_title": "随买随用",
 				"name": "上海欢乐谷",
@@ -132,7 +132,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1906/19/19b7939928a0200da3.img.jpg_200x200_6879c7f7.jpg",
 				"id": 5,
 				"img_title": "随买随用",
 				"name": "上海海昌海洋公园",
@@ -144,7 +144,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1409/22/2215fe5ef7127740fe578018de575df6.jpg_200x200_efa370ac.jpg",
 				"id": 6,
 				"img_title": "可定明日",
 				"name": "东方绿舟",
@@ -156,7 +156,7 @@
 				"status": 1
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1804/a7/a78d5d7a31a55d9ba3.img.jpg_200x200_4ebba6b4.jpg",
 				"id": 7,
 				"img_title": "",
 				"name": "浦江郊野公园奇迹花园",
@@ -168,7 +168,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/tuan/team2/1507/2c/83e0e0e7ae082a.jpg_200x200_6d7378b2.jpg",
 				"id": 8,
 				"img_title": "随买随用",
 				"name": "东方明珠",
@@ -180,7 +180,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1412/9f/fbff2a5302c0ce906ef9b64159730f89.water.jpg_200x200_87806940.jpg",
 				"id": 9,
 				"img_title": "随买随用",
 				"name": "上海海洋水族馆",
@@ -192,7 +192,7 @@
 				"status": 0
 			},
 			{
-				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1612/34/349ee417b69fed40a3.img.jpg_200x200_9c5356e9.jpg",
 				"id": 10,
 				"img_title": "可订今日",
 				"name": "上海星空错觉艺术馆",
@@ -202,6 +202,38 @@
 				"price": 66,
 				"knowledged": "",
 				"status": 2
+			}
+		],
+		"weekends": [
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/source/1511/ea/7f43191b747bb9.jpg_r_640x214_f58e829d.jpg",
+				"id": 1,
+				"scenic_title": "上海泡汤圣地",
+				"scenic_desc": "上海的朋友总会问，哪里可以泡温泉，哪里的温泉好呢？这里有最好最全的上海温泉"
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg",
+				"id": 2,
+				"scenic_title": "上海必打卡",
+				"scenic_desc": "中西合璧，现代和传统各有各的精彩"
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/source/1505/7b/2a6b0ce087f0e5.jpg_r_640x214_5c76b115.jpg",
+				"id": 3,
+				"scenic_title": "情迷博物馆",
+				"scenic_desc": "走进艺术殿堂，电影博物馆生动演绎着电影人和电影背后的故事，你不想知道吗~"
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg",
+				"id":4,
+				"scenic_title": "周末亲子爱玩",
+				"scenic_desc": "走进自然或玩转乐园，感知大千世界，游乐项目惊险刺激，特色表演异彩纷呈，等你们~"
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/source/1511/ea/7f43191b747bb9.jpg_r_640x214_f58e829d.jpg",
+				"id":5,
+				"scenic_title": "上海城市观光",
+				"scenic_desc": "来这里寻找你所不认识的魔都 ，感受云端漫步，品味老上海风情，享受休闲时光"
 			}
 		]
 	}

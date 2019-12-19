@@ -1,6 +1,8 @@
 <template>
 	<div  class="swiper-box">
-		<swiper :options="swiperOption" ref="mySwiper">
+		<swiper 
+			:options="swiperOption" 
+			ref="mySwiper">
 				<!-- slides -->
 				<swiper-slide v-for="(item, key) of homeBanner" :key="item.id">
 					<img :src="item.url" :alt="item.name">
@@ -20,8 +22,8 @@
     data() {
       return {
         swiperOption: {
-          loop: true,
-					speed: 300,//切换到下一张图片所需的时间，默认300，可以生略略不写
+					loop: true,
+					speed: 300,//切换到下一张图片所需的时间，默认300，可以省略不写
 					pagination : {
 						el: '.swiper-pagination'
 					},
@@ -36,7 +38,10 @@
     computed: {
       swiper() {
         return this.$refs.mySwiper.swiper
-      }
+      },
+			renderSwiper() {
+				return this.homeBanner.length
+			}
     },
     mounted() {
       // current swiper instance
