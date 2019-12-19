@@ -1,0 +1,208 @@
+{
+	"data": {
+		"banners": [
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/d8cb7dc033dc98988af113a875fb7b40.jpg_750x200_497817a1.jpg",
+				"id": "1"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/81f5e1c19d95227c5d9b593dd02de787.jpg_750x200_e1780a55.jpg",
+				"id": "2"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/15f7901482e5a0b40d5cc8d38ce1dbae.jpg_750x200_033a5b46.jpg",
+				"id": "3"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/0645bd625b46216a55e3835d0f677ce2.jpg_750x200_1e9a0cbf.jpg",
+				"id": "4"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/4d9e45775ba63057e10f3c4d9d7b8cdd.jpg_750x200_345d57f5.jpg",
+				"id": "5"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/67e28eadb089eda29d77d2dc7eec3096.jpg_750x200_d50a0334.jpg",
+				"id": "6"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/fd8b0bd3839c89f319efae4271d5eecb.jpg_750x200_98b9a5fb.jpg",
+				"id": "7"
+			}
+		],
+		"icons": [
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+				"id": "1",
+				"name": "景点门票"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+				"id": "2",
+				"name": "一日游"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/de/f26be47a6bf02a02.png",
+				"id": "3",
+				"name": "上海迪士尼"
+			},
+			{
+				"url": "https://img1.qunarzz.com/piao/fusion/1810/50/26ffa31b56646402.png",
+				"id": "4",
+				"name": "上海海昌"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+				"id": "5",
+				"name": "上海野生动物园"
+			},
+			{
+				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/3ef092d0a89ffddb7f781cda30c8ae49.png",
+				"id": "6",
+				"name": "错峰出游"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+				"id": "7",
+				"name": "温泉滑雪"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
+				"id": "8",
+				"name": "黄浦江游船"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png",
+				"id": "9",
+				"name": "赏秋色"
+			},
+			{
+				"url": "https://imgs.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+				"id": "10",
+				"name": "世纪公园"
+			}
+		],
+		"lovely": [
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 1,
+				"img_title": "随买随用",
+				"name": "上海迪士尼乐园",
+				"stars": 5,
+				"address": "浦东新区",
+				"comments_num": 281531,
+				"price": 399,
+				"knowledged": "全球最大的迪士尼城堡",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 2,
+				"img_title": "随买随用",
+				"name": "上海野生动物园",
+				"stars": 5,
+				"address": "浦东新区",
+				"comments_num": 68292,
+				"price": 115,
+				"knowledged": "会跳芭蕾的小海狮们~",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 3,
+				"img_title": "随买随用",
+				"name": "上海动物园",
+				"stars": 4,
+				"address": "长宁区",
+				"comments_num": 21526,
+				"price": 37.3,
+				"knowledged": "巨型象龟了解一下~",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 4,
+				"img_title": "随买随用",
+				"name": "上海欢乐谷",
+				"stars": 5,
+				"address": "松江区",
+				"comments_num": 43227,
+				"price": 98,
+				"knowledged": "敢上1200米长的木质过山车吗？",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 5,
+				"img_title": "随买随用",
+				"name": "上海海昌海洋公园",
+				"stars": 5,
+				"address": "浦东新区",
+				"comments_num": 27107,
+				"price": 139,
+				"knowledged": "",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 6,
+				"img_title": "可定明日",
+				"name": "东方绿舟",
+				"stars": 5,
+				"address": "青浦区",
+				"comments_num": 281531,
+				"price": 43.1,
+				"knowledged": "全国首屈一指的青少年校外教育营地",
+				"status": 1
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 7,
+				"img_title": "",
+				"name": "浦江郊野公园奇迹花园",
+				"stars": 4,
+				"address": "闵行区",
+				"comments_num": 1496,
+				"price": 168,
+				"knowledged": "帅的人都去过了😎，你还等什么~",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 8,
+				"img_title": "随买随用",
+				"name": "东方明珠",
+				"stars": 5,
+				"address": "浦东新区",
+				"comments_num": 90159,
+				"price": 80,
+				"knowledged": "259米透明悬空观光廊了解一下~",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 9,
+				"img_title": "随买随用",
+				"name": "上海海洋水族馆",
+				"stars": 5,
+				"address": "浦东新区",
+				"comments_num": 29843,
+				"price": 146,
+				"knowledged": "亲眼见证鲨鱼的恐怖",
+				"status": 0
+			},
+			{
+				"img_url": "https://imgs.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg",
+				"id": 10,
+				"img_title": "可订今日",
+				"name": "上海星空错觉艺术馆",
+				"stars": 5,
+				"address": "黄浦区",
+				"comments_num": 11495,
+				"price": 66,
+				"knowledged": "",
+				"status": 2
+			}
+		]
+	}
+}
