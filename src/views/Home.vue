@@ -38,7 +38,7 @@ export default {
 	},
 	methods: {
 		getJson() {
-			this.$axios.get('/home.json')
+			this.$axios.get('/home/home.json')
 				.then(this.getJsonSucc)
 		},
 		getJsonSucc(res) {

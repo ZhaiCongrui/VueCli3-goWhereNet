@@ -1,7 +1,7 @@
 <template>
 	<div>
-		123
 		<city-header></city-header>
+		<router-view></router-view>
 	</div>
 </template>
 

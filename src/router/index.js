@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import City from '@/views/City'
 
+import Domestic from '@/components/City/Domestic'
+import Outlands from '@/components/City/Outlands'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,7 +17,23 @@ const routes = [
   {
 		path: '/city',
 		name: 'city',
-		component: City
+		component: City,
+		children: [
+			{
+				path: '',
+				component: Domestic
+			},
+			{
+				path: 'domestic',
+				name: 'domestic',
+				component: Domestic
+			},
+			{
+				path: 'outlands',
+				name: 'outlands',
+				component: Outlands
+			}
+		]
   }
   // {
   //   path: '/about',
