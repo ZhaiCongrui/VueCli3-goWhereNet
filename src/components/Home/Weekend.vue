@@ -46,5 +46,6 @@
 					padding-left: .3rem
 					font-size .34rem
 					line-height .5rem
+					color #666
 					$ellipsis()
 </style>

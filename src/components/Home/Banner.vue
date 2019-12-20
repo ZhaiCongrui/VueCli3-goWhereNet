@@ -2,7 +2,8 @@
 	<div  class="swiper-box">
 		<swiper 
 			:options="swiperOption" 
-			ref="mySwiper">
+			ref="mySwiper"
+			v-if="homeBanner">
 				<!-- slides -->
 				<swiper-slide v-for="(item, key) of homeBanner" :key="item.id">
 					<img :src="item.url" :alt="item.name">
