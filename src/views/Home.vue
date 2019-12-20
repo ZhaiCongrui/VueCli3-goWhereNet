@@ -17,7 +17,7 @@ import HomeLovely from '@/components/Home/Lovely'
 import HomeWeekend from '@/components/Home/Weekend'
 
 export default {
-	name: 'home',
+	name: 'Home',
 	components: {
 		HomeHeader,
 		HomeBanner,

@@ -8,8 +8,10 @@
 			<div class="input">输入城市/景点/游玩主题</div>
 		</div>
 		<div class="header-right">
-			<span class="city-name">北京</span>
-			<span class="iconfont icon-xiala"></span>
+			<router-link to="/city" tag="div">
+				<span class="city-name">北京</span>
+				<span class="iconfont icon-xiala"></span>
+			</router-link>
 		</div>
 	</div>
 </template>
