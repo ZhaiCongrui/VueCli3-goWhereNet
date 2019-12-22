@@ -21,7 +21,7 @@ const routes = [
 		children: [
 			{
 				path: '',
-				component: Domestic
+				redirect: 'domestic'
 			},
 			{
 				path: 'domestic',

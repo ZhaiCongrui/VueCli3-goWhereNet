@@ -6,8 +6,8 @@
 		</div>
 		<div class="bottom">
 			<ul>
-				<router-link to="/city/domestic" tag="li" class="choice">境内</router-link>
-				<router-link to="/city/outlands" tag="li" class="choice">境外·港澳台</router-link>
+				<router-link to="domestic" tag="li" active-class="active" replace>境内</router-link>
+				<router-link to="outlands" tag="li" active-class="active" replace>境外·港澳台</router-link>
 			</ul>
 		</div>
 	</header>
@@ -48,6 +48,9 @@
 			ul
 				display flex
 				padding: .2rem 1.5rem
+				.active
+					background #FFF
+					color $color
 				li
 					flex 1
 					border 1px solid #fff
