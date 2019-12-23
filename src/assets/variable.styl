@@ -6,7 +6,10 @@ $ellipsis(){
 	text-overflow ellipsis
 	white-space nowrap
 }
-$city-styl(w, before, after)
+$city-hotW = 33.33%
+$city-lettersW = 16.66%
+$city-all = 25%
+$city-styl()
 	.box 
 		font-size .4rem
 		.title 
@@ -14,31 +17,11 @@ $city-styl(w, before, after)
 			line-height 1rem
 			text-align left
 			padding-left .5rem
-		if before
-			.list::before
-				content: ''
-				position absolute
-				width 33.33%
-				left 33.33%
-				height 100%
-				border-left 1px solid $bor-color
-				border-right 1px solid $bor-color
-		if after
-			.list::after
-				content: ''
-				position absolute
-				width 33.33%
-				left 33.33%
-				height 100%
-				border-left 1px solid $bor-color
-				border-right 1px solid $bor-color
+			a
+				display block
 		.list 
 			position relative
 			display flex
 			flex-wrap wrap
 			background #fff
-			.item
-				width 33.33%
-				height 1.3rem
-				line-height 1.3rem
-				border-bottom 1px solid $bor-color
+			
