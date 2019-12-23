@@ -1,7 +1,9 @@
 <template>
-	<div>
+	<div class="city-box">
 		<city-header></city-header>
-		<router-view></router-view>
+		<keep-alive>
+			<router-view></router-view>
+		</keep-alive>
 	</div>
 </template>
 
@@ -16,5 +18,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.city-box
+	background #eee
 </style>
