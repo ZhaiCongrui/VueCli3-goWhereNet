@@ -38,7 +38,7 @@
 				position absolute
 				left 0
 				top 0
-				width 1rem
+				width 1.2rem
 				height 1rem
 			p
 				text-align center

@@ -9,7 +9,7 @@
 		</div>
 		<div class="header-right">
 			<router-link to="/city" tag="div" replace>
-				<span class="city-name">上海</span>
+				<span class="city-name">{{ homeCity }}</span>
 				<span class="iconfont icon-xiala"></span>
 			</router-link>
 		</div>
@@ -18,7 +18,10 @@
 
 <script>
 export default {
-	name: 'HomeHeader'
+	name: 'HomeHeader',
+	props: {
+		homeCity: String
+	}
 }
 </script>
 
@@ -61,6 +64,6 @@ export default {
 				width 100%
 				height 100%
 		.header-right 
-			min-width 1rem
+			min-width 1.5rem
 			padding 0 .2rem
 </style>

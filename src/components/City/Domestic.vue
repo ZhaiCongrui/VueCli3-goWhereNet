@@ -7,9 +7,9 @@
 </template>
 
 <script>
-	import CityHot from '@/components/City/Hot'
-	import CityLetters from '@/components/City/Letters'
-	import CityAll from '@/components/City/All'
+	import CityHot from '@/components/City/Common/Hot'
+	import CityLetters from '@/components/City/Common/Letters'
+	import CityAll from '@/components/City/Common/All'
 	export default {
 		name: 'CityDomestic',
 		data(){
@@ -32,6 +32,10 @@
 						const _data = res.data.data
 						this.list = _data
 					})
+			},
+			passCity(data) {
+				this.$emit('changeCity', data)
+				console.log(data)
 			}
 		}
 	}

@@ -3,7 +3,7 @@
 		<swiper 
 			:options="swiperOption" 
 			ref="mySwiper"
-			v-if="homeBanner">
+			v-if="homeBanner.length">
 				<!-- slides -->
 				<swiper-slide v-for="(item, key) of homeBanner" :key="item.id">
 					<img :src="item.url" :alt="item.name">
@@ -36,20 +36,6 @@
         },
       }
     },
-    computed: {
-      swiper() {
-        return this.$refs.mySwiper.swiper
-      },
-			renderSwiper() {
-				return this.homeBanner.length
-			}
-    },
-    mounted() {
-      // current swiper instance
-      // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-      console.log('this is current swiper instance object', this.swiper)
-      this.swiper.slideTo(1, 1000, false)
-    }
   }
 </script>
 

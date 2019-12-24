@@ -13,6 +13,9 @@ export default {
 	name: 'city',
 	components: {
 		CityHeader,
+	},
+	methods: {
+		
 	}
 };
 </script>

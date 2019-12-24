@@ -2,7 +2,12 @@
 	<div class="hot-box">
 		<p class="title">热门城市</p>
 		<ul class="list">
-			<li class="item" v-for="(item, index) of list" :key="item.id">{{ item.name }}</li>
+			<li class="item" 
+				v-for="(item, index) of list" 
+				:key="item.id" 
+				@click="changeCity(index, $event)"
+				ref="citys"
+			>{{ item.name }}</li>
 		</ul>
 	</div>
 </template>
@@ -12,6 +17,14 @@
 		name: 'CityHot',
 		props: {
 			list: Array
+		},
+		methods: {
+			changeCity(index, e) {
+				//const city = this.$refs.citys[index].innerText
+				/* this.$refs.citys[index].innerText和 e.target.innerText都可以获取到dom中的text */
+				const city = e.target.innerText
+				this.$emit('getCity', city)
+			}
 		}
 	}
 </script>

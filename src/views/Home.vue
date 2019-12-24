@@ -1,6 +1,14 @@
 <template>
 	<div class="home">
-		<home-header></home-header>
+		<vue-element-loading 
+			:active="isActive" 
+			:is-full-screen="true"
+			spinner="line-scale"
+			color="#00afc7"
+			duration=".6"
+			background-color="#fff"
+		/>
+		<home-header :homeCity="city"></home-header>
 		<home-banner :homeBanner="banners"></home-banner>
 		<home-icons :homeIcons="icons"></home-icons>
 		<home-lovely :list="loveList"></home-lovely>
@@ -15,6 +23,7 @@ import HomeBanner from '@/components/Home/Banner'
 import HomeIcons from '@/components/Home/Icons'
 import HomeLovely from '@/components/Home/Lovely'
 import HomeWeekend from '@/components/Home/Weekend'
+import VueElementLoading from 'vue-element-loading'
 
 export default {
 	name: 'Home',
@@ -24,9 +33,12 @@ export default {
 		HomeIcons,
 		HomeLovely,
 		HomeWeekend,
+		VueElementLoading
 	},
 	data() {
 		return {
+			isActive: this.$store.state.isActive,
+			city: '',
 			banners: [],
 			icons: [],
 			loveList: [],
@@ -47,6 +59,8 @@ export default {
 			this.icons = _data.icons
 			this.loveList = _data.lovely
 			this.weekends = _data.weekends
+			this.city = _data.defaultCity
+			setTimeout(() => this.isActive = false, 1000)
 		}
 	}
 };

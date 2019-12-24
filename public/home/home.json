@@ -1,6 +1,7 @@
 {
 	"code": 1,
 	"data": {
+		"defaultCity": "上海",
 		"banners": [
 			{
 				"url": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201912/d8cb7dc033dc98988af113a875fb7b40.jpg_750x200_497817a1.jpg",
