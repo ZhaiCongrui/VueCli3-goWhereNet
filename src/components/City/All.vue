@@ -30,6 +30,7 @@
 			box-sizing border-box
 			$ellipsis()
 			border-bottom 1px solid #ddd
+			font-size $font-size
 	.list::before
 		content ''
 		position absolute

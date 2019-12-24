@@ -25,6 +25,7 @@
 			height 1.3rem
 			line-height 1.3rem
 			border-bottom 1px solid $bor-color
+			font-size $font-size
 	.list::before
 		content: ''
 		position absolute

@@ -31,7 +31,6 @@
 					.then((res) => {
 						const _data = res.data.data
 						this.list = _data
-						console.log(this.list)
 					})
 			}
 		}

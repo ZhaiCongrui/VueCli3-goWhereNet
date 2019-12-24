@@ -18,7 +18,7 @@
 		name: 'CityHeader',
 		methods: {
 			goHome() {
-				this.$router.push('/')
+				this.$router.replace('/')
 			}
 		}
 	}

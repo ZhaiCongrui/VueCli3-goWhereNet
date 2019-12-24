@@ -29,6 +29,7 @@
 			width $city-lettersW
 			height 1.3rem
 			line-height 1.3rem
+			font-size .44rem
 			a
 				display block
 				color #333
