@@ -37,7 +37,7 @@ export default {
 	},
 	data() {
 		return {
-			isActive: this.$store.state.isActive,
+			isActive: true,
 			city: '',
 			banners: [],
 			icons: [],
@@ -60,7 +60,7 @@ export default {
 			this.loveList = _data.lovely
 			this.weekends = _data.weekends
 			this.city = _data.defaultCity
-			setTimeout(() => this.isActive = false, 1000)
+			setTimeout(() => this.isActive = false, 500)
 		}
 	}
 };
