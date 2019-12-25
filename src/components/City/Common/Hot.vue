@@ -23,7 +23,8 @@
 				//const city = this.$refs.citys[index].innerText
 				/* this.$refs.citys[index].innerText和 e.target.innerText都可以获取到dom中的text */
 				const city = e.target.innerText
-				this.$emit('getCity', city)
+				this.$store.commit('changeCity', city)
+				this.$router.replace('/')
 			}
 		}
 	}

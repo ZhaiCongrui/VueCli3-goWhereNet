@@ -1,11 +1,11 @@
 <template>
 	<div class="home">
-		<vue-element-loading 
+		<vue-element-loading
 			:active="isActive" 
 			:is-full-screen="true"
 			spinner="line-scale"
 			color="#00afc7"
-			duration=".6"
+			duration=".8"
 			background-color="#fff"
 		/>
 		<home-header :homeCity="city"></home-header>
@@ -33,12 +33,11 @@ export default {
 		HomeIcons,
 		HomeLovely,
 		HomeWeekend,
-		VueElementLoading
+		VueElementLoading,
 	},
 	data() {
 		return {
 			isActive: true,
-			city: '',
 			banners: [],
 			icons: [],
 			loveList: [],
@@ -47,6 +46,11 @@ export default {
 	},
 	created() {
 		this.getJson()
+	},
+	computed: {
+		city() {
+			return this.$store.state.city
+		}
 	},
 	methods: {
 		getJson() {
@@ -59,7 +63,6 @@ export default {
 			this.icons = _data.icons
 			this.loveList = _data.lovely
 			this.weekends = _data.weekends
-			this.city = _data.defaultCity
 			setTimeout(() => this.isActive = false, 500)
 		}
 	}

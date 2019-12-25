@@ -3,7 +3,11 @@
 		<div class="citys-box" v-for="(item, index) of list" :key="index">
 			<p class="title"><a :id="item.title">{{ item.title }}</a></p>
 			<ul class="list">
-				<li class="item" v-for="(city, id) of item.list" :key="city.id">{{ city.name }}</li>
+				<li class="item"
+					v-for="(city, id) of item.list" 
+					:key="city.id"
+					@click="changeCity($event)"
+				>{{ city.name }}</li>
 			</ul>
 		</div>
 	</div>
@@ -14,6 +18,13 @@
 		name: 'CityAll',
 		props: {
 			list: Array
+		},
+		methods: {
+			changeCity(e) {
+				const city = e.target.innerText
+				this.$store.commit('changeCity', city)
+				this.$router.replace('/')
+			}
 		}
 	}
 </script>
