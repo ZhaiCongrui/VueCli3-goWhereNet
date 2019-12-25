@@ -2,7 +2,11 @@
 	<div class="weekend-box">
 		<div class="title">周末去哪</div>
 		<ul class="list">
-			<li class="item" v-for="(item, index) of weekends" :key="item.id">
+			<li class="item"
+				v-for="(item, index) of weekends" 
+				:key="item.id"
+				@click="gotoDetail"
+			>
 				<div class="img-box">
 					<img :src="item.img_url">
 				</div>
@@ -17,6 +21,11 @@
 	export default{
 		props: {
 			weekends: Array
+		},
+		methods: {
+			gotoDetail() {
+				this.$router.replace('/detail')
+			}
 		}
 	}
 </script>

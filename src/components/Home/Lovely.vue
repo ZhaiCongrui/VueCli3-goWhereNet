@@ -5,7 +5,11 @@
 			猜你喜欢
 		</div>
 		<ul class="list">
-			<li class="item" v-for="(item, index) of list" :key="item.id">
+			<li class="item" 
+				v-for="(item, index) of list" 
+				:key="item.id"
+				@click="gotoDetail"
+			>
 				<div class="img-box">
 					<img :src="item.img_url" alt="" />
 					<p class="img-title" :class="'img-title'+item.status">{{ item.img_title }}</p>
@@ -44,6 +48,11 @@ export default {
 	props: {
 		list: Array
 	},
+	methods: {
+		gotoDetail() {
+			this.$router.replace('/detail')
+		}
+	}
 };
 </script>
 

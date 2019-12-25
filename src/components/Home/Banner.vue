@@ -5,11 +5,13 @@
 			ref="mySwiper"
 			v-if="homeBanner.length">
 				<!-- slides -->
-				<swiper-slide v-for="(item, key) of homeBanner" :key="item.id">
-					<img :src="item.url" :alt="item.name">
+				<swiper-slide v-for="(item, key) of homeBanner"
+					:key="item.id" 
+				>
+					<img :src="item.url" :alt="item.name" @click="gotoDetail">
 				</swiper-slide>
 				<!-- Optional controls -->
-				<div class="swiper-pagination"  slot="pagination"></div>
+				<div class="swiper-pagination" slot="pagination"></div>
 			</swiper>
 	</div>
 </template>
@@ -36,6 +38,11 @@
         },
       }
     },
+		methods: {
+			gotoDetail() {
+				this.$router.replace('/detail')
+			}
+		}
   }
 </script>
 
