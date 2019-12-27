@@ -51,7 +51,7 @@
 		span
 			background #fff
 	.swiper-box
-		height 2.9rem
+		min-height 2.9rem
 		.swiper-container
 			.swiper-slide
 				img
