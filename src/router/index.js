@@ -18,12 +18,18 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+		meta: {
+			title: '首页'
+		}
   },
   {
 		path: '/city',
 		name: 'city',
 		component: City,
+		meta: {
+			title: '城市'
+		},
 		children: [
 			{
 				path: '',
@@ -32,12 +38,18 @@ const routes = [
 			{
 				path: 'domestic',
 				name: 'domestic',
-				component: Domestic
+				component: Domestic,
+				meta: {
+					title: '境内'
+				}
 			},
 			{
 				path: 'outlands',
 				name: 'outlands',
-				component: Outlands
+				component: Outlands,
+				meta: {
+					title: '境外·港澳台'
+				}
 			}
 		]
   },
@@ -53,5 +65,18 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+//跳转到新路由, 改变页面的  title
+/* 1. 
+	router.afterEach((to, from) => {
+		console.log(to)
+		document.title = to.meta.title
+	})
+*/
+/* 2. */
+	router.beforeEach((to, from, next) => {
+		next()
+		document.title = to.meta.title
+	})
 
 export default router
