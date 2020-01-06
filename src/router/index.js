@@ -63,7 +63,10 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+	scrollBehavior(to, from, savePosition){
+		return {x: 0, y: 0}
+	}
 })
 
 //跳转到新路由, 改变页面的  title
