@@ -19,7 +19,7 @@ export default {
 		change() {
 			this.isActive = false
 		}
-	}
+	},
 };
 </script>
 

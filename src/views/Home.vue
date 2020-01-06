@@ -65,6 +65,12 @@ export default {
 			this.weekends = _data.weekends
 			setTimeout(() => this.isActive = false, 500)
 		}
+	},
+	activated() {
+		if(localStorage.city !== this.$store.state.city){
+			this.getJson()
+			localStorage.city = this.$store.state.city
+		}
 	}
 };
 </script>
