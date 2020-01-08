@@ -1,6 +1,11 @@
 <template>
 	<div class="header-box">
-		<div class="back-btn" v-show="isShow"><span class="iconfont icon-fanhui"></span></div>
+		<div class="back-btn" v-show="isShow">
+			<span 
+				class="iconfont icon-fanhui"
+				@click="back">
+			</span>
+		</div>
 		<div class="title" v-show="!isShow" :style="opacityStyle">
 			<span class="iconfont icon-fanhui"></span>
 			<p>上海动物园</p>
@@ -36,6 +41,9 @@
 				} else {
 					this.isShow = true
 				}
+			}, 
+			back() {
+				this.$router.replace('/')
 			}
 		}
 	}

@@ -56,7 +56,10 @@ const routes = [
 	{
 		path: '/detail',
 		name: 'detail',
-		component: Detail
+		component: Detail,
+		meta: {
+			title: '详情'
+		}
 	}
 ]
 
