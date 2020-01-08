@@ -24,11 +24,11 @@
 				}
 			}
 		},
-		created() {
+		activated() {
 			window.addEventListener('scroll', this.updataOpacity)
 		},
-		activated() {
-			this.updataOpacity()
+		deactivated() {
+			window.removeEventListener('scroll', this.updataOpacity)
 		},
 		methods: {
 			updataOpacity() {
