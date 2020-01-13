@@ -57,6 +57,7 @@ export default {
     height: 44px;
     top: 0;
     left: 0;
+    z-index: 1;
 
     span {
       position: absolute;
