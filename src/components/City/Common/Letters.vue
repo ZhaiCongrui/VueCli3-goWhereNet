@@ -2,7 +2,7 @@
   <div class="box">
     <p class="title">字母排序</p>
     <ul class="list">
-      <li class="item" v-for="(item, index) of list" :key="item.id">
+      <li class="item" v-for="item of list" :key="item.id">
         <a :href="'#'+item.name">{{ item.name }}</a>
       </li>
     </ul>

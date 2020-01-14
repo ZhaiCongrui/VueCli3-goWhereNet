@@ -7,7 +7,7 @@
       <ul class="list">
         <li
           class="item"
-          v-for="(city, index) of item.list"
+          v-for="city of item.list"
           :key="city.id"
           @click="changeCity($event)"
         >{{ city.name }}</li>
