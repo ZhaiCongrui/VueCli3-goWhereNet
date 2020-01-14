@@ -18,15 +18,15 @@
 
 <script>
 // @ is an alias to /src
-import HomeHeader from "@/components/Home/Header";
-import HomeBanner from "@/components/Home/Banner";
-import HomeIcons from "@/components/Home/Icons";
-import HomeLovely from "@/components/Home/Lovely";
-import HomeWeekend from "@/components/Home/Weekend";
-import VueElementLoading from "vue-element-loading";
+import HomeHeader from '@/components/Home/Header'
+import HomeBanner from '@/components/Home/Banner'
+import HomeIcons from '@/components/Home/Icons'
+import HomeLovely from '@/components/Home/Lovely'
+import HomeWeekend from '@/components/Home/Weekend'
+import VueElementLoading from 'vue-element-loading'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     HomeHeader,
     HomeBanner,
@@ -42,40 +42,39 @@ export default {
       icons: [],
       loveList: [],
       weekends: []
-    };
+    }
   },
   created() {
-    this.getJson();
+    this.getJson()
   },
   computed: {
     city() {
-      return this.$store.state.city;
+      return this.$store.state.city
     }
   },
   methods: {
     getJson() {
-      this.$axios.get("/home/home.json").then(this.getJsonSucc);
+      this.$axios.get('/home/home.json').then(this.getJsonSucc)
     },
     getJsonSucc(res) {
-      const _data = res.data.data;
-      this.banners = _data.banners;
-      this.icons = _data.icons;
-      this.loveList = _data.lovely;
-      this.weekends = _data.weekends;
-      setTimeout(() => (this.isActive = false), 500);
+      const _data = res.data.data
+      this.banners = _data.banners
+      this.icons = _data.icons
+      this.loveList = _data.lovely
+      this.weekends = _data.weekends
+      setTimeout(() => (this.isActive = false), 500)
     }
   },
   activated() {
     if (localStorage.city !== this.$store.state.city) {
-      this.getJson();
-      localStorage.city = this.$store.state.city;
+      this.getJson()
+      localStorage.city = this.$store.state.city
     }
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>
-.home {
-  background: #eee;
-}
+.home
+  background #eee
 </style>

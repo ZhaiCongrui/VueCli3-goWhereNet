@@ -19,57 +19,57 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
-		meta: {
-			title: '首页'
-		}
+    meta: {
+      title: '首页'
+    }
   },
   {
-		path: '/city',
-		name: 'city',
-		component: City,
-		meta: {
-			title: '城市'
-		},
-		children: [
-			{
-				path: '',
-				redirect: 'domestic'
-			},
-			{
-				path: 'domestic',
-				name: 'domestic',
-				component: Domestic,
-				meta: {
-					title: '境内'
-				}
-			},
-			{
-				path: 'outlands',
-				name: 'outlands',
-				component: Outlands,
-				meta: {
-					title: '境外·港澳台'
-				}
-			}
-		]
+    path: '/city',
+    name: 'city',
+    component: City,
+    meta: {
+      title: '城市'
+    },
+    children: [
+      {
+        path: '',
+        redirect: 'domestic'
+      },
+      {
+        path: 'domestic',
+        name: 'domestic',
+        component: Domestic,
+        meta: {
+          title: '境内'
+        }
+      },
+      {
+        path: 'outlands',
+        name: 'outlands',
+        component: Outlands,
+        meta: {
+          title: '境外·港澳台'
+        }
+      }
+    ]
   },
-	{
-		path: '/detail',
-		name: 'detail',
-		component: Detail,
-		meta: {
-			title: '详情'
-		}
-	}
+  {
+    path: '/detail',
+    name: 'detail',
+    component: Detail,
+    meta: {
+      title: '详情'
+    }
+  }
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-	scrollBehavior(to, from, savePosition){
-		return {x: 0, y: 0}
-	}
+  scrollBehavior(to, from, savePosition) {
+    return { x: 0, y: 0 }
+  }
 })
 
 //跳转到新路由, 改变页面的  title
@@ -80,9 +80,9 @@ const router = new VueRouter({
 	})
 */
 /* 2. */
-	router.beforeEach((to, from, next) => {
-		next()
-		document.title = to.meta.title
-	})
+router.beforeEach((to, from, next) => {
+  next()
+  document.title = to.meta.title
+})
 
 export default router

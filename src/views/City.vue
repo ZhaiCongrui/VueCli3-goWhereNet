@@ -8,23 +8,22 @@
 </template>
 
 <script>
-import CityHeader from "@/components/City/Header.vue";
+import CityHeader from '@/components/City/Header.vue'
 
 export default {
-  name: "city",
+  name: 'city',
   components: {
     CityHeader
   },
   methods: {
     change() {
-      this.isActive = false;
+      this.isActive = false
     }
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>
-.city-box {
-  background: #eee;
-}
+.city-box
+  background #eee
 </style>
