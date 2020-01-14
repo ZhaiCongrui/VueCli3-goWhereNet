@@ -4,7 +4,7 @@
       <span class="iconfont icon-fanhui" @click="back"></span>
     </div>
     <div class="title" v-show="!isShow" :style="opacityStyle">
-      <span class="iconfont icon-fanhui"></span>
+      <span class="iconfont icon-fanhui" @click="back"></span>
       <p>上海动物园</p>
     </div>
   </div>
@@ -22,6 +22,7 @@ export default {
     }
   },
   activated() {
+    this.updataOpacity()
     window.addEventListener('scroll', this.updataOpacity)
   },
   deactivated() {
