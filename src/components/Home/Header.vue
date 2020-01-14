@@ -37,7 +37,7 @@ export default {
   .header-left
     min-width $height
     span
-      font-size .6rem
+      font-size 0.6rem
   .header-center
     position relative
     background #fff

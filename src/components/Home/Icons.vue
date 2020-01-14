@@ -4,7 +4,7 @@
 			<!-- slides -->
 			<swiper-slide v-for="(page,index) of pages" :key="index">
 				<ul>
-					<li v-for="(item, index) of page" :key="item.id">
+					<li v-for="item of page" :key="item.id">
 						<img :src="item.url" alt="" />
 						<p>{{ item.name }}</p>
 					</li>
