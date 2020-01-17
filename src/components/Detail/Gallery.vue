@@ -36,7 +36,7 @@ export default {
   },
 }
 </script>
-<style lang="styl" scoped>
+<style lang="stylus" scoped>
 .swiper-box
   position fixed
   top 0
