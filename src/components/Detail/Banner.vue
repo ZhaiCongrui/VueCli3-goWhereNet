@@ -16,7 +16,6 @@ export default {
   name: 'DetailBanner',
   methods: {
     showGallery() {
-      console.log(1)
       this.$emit('showgallery')
     }
   }

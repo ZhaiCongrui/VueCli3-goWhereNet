@@ -20,7 +20,6 @@ export default {
   }, 
   data() {
     return {
-      hidden: this.isShow,
       swiperOption: {
         loop: true,
         speed: 300, //切换到下一张图片所需的时间，默认300，可以省略不写
@@ -38,7 +37,12 @@ export default {
   },
   methods: {
     hiddenGllary() {
-      this.hidden = false
+      this.$emit('hidegallary')
+    }
+  },
+  computed: {
+    hidden() {
+      return this.isShow
     }
   }
 }

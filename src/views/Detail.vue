@@ -1,8 +1,8 @@
 <template>
   <div class="detail-box">
     <detail-header></detail-header>
-    <detail-banner @showgallery="updateIsShow"></detail-banner>
-    <DetailGallery :detailGallery="gallery" :isShow="galleryShow"></DetailGallery>
+    <detail-banner @showgallery="isshowbetrue"></detail-banner>
+    <DetailGallery :detailGallery="gallery" :isShow="galleryShow" :hidegallary="isshowbefalse"></DetailGallery>
   </div>
 </template>
 
@@ -46,9 +46,11 @@ export default {
     DetailGallery
   },
   methods: {
-    updateIsShow() {
-      console.log(2)
+    isshowbetrue() {
       this.galleryShow = true
+    },
+    isshowbefalse() {
+      this.galleryShow = false
     }
   }
 }
