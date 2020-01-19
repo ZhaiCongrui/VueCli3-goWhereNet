@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-box">
+  <div class="swiper-box" @click="hiddenGllary" v-show="hidden">
     <swiper :options="swiperOption" ref="mySwiper" v-if="detailGallery.length">
       <!-- slides -->
       <swiper-slide v-for="item of detailGallery" :key="item.id">
@@ -15,10 +15,12 @@
 export default {
   name: 'DealGallery',
   props: {
-    detailGallery: Array
-  },
+    detailGallery: Array,
+    isShow: Boolean
+  }, 
   data() {
     return {
+      hidden: this.isShow,
       swiperOption: {
         loop: true,
         speed: 300, //切换到下一张图片所需的时间，默认300，可以省略不写
@@ -32,6 +34,11 @@ export default {
           disableOnInteraction: false
         }
       }
+    }
+  },
+  methods: {
+    hiddenGllary() {
+      this.hidden = false
     }
   }
 }
@@ -49,8 +56,13 @@ export default {
     position absolute
     width 100%
     top 50%
-    transform translateY(-50%)
+    margin-top -3rem
     height 6rem
+    overflow visible
     img
       width 100%
+    .swiper-pagination
+      position fixed
+      bottom 1rem
+      color #fff
 </style>

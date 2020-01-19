@@ -3,7 +3,8 @@
     <img
       class="banner-img"
       src="http://img1.qunarzz.com/sight/p0/1603/9b/9bf694a468dd774490.water.jpg_600x330_208523f8.jpg"
-      alt
+      alt="图片加载失败"
+      @click="showGallery"
     />
     <p class="banner-title">上海动物园(AAAA景区)</p>
     <div class="banner-shadow"></div>
@@ -12,7 +13,13 @@
 
 <script>
 export default {
-  name: 'DetailBanner'
+  name: 'DetailBanner',
+  methods: {
+    showGallery() {
+      console.log(1)
+      this.$emit('showgallery')
+    }
+  }
 }
 </script>
 

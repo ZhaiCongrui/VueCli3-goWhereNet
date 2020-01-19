@@ -1,8 +1,8 @@
 <template>
   <div class="detail-box">
     <detail-header></detail-header>
-    <detail-banner></detail-banner>
-    <DetailGallery :detailGallery="gallery"></DetailGallery>
+    <detail-banner @showgallery="updateIsShow"></detail-banner>
+    <DetailGallery :detailGallery="gallery" :isShow="galleryShow"></DetailGallery>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default {
   name: 'Detail',
   data() {
     return {
+      galleryShow: false,
       gallery: [
         {
           id: 1,
@@ -44,7 +45,12 @@ export default {
     DetailBanner,
     DetailGallery
   },
-  created() {}
+  methods: {
+    updateIsShow() {
+      console.log(2)
+      this.galleryShow = true
+    }
+  }
 }
 </script>
 
