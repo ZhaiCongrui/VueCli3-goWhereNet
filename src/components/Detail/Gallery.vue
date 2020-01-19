@@ -33,7 +33,7 @@ export default {
         }
       }
     }
-  },
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -47,6 +47,7 @@ export default {
   z-index 10
   .swiper-container
     position absolute
+    width 100%
     top 50%
     transform translateY(-50%)
     height 6rem
